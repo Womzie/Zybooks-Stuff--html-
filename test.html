@@ -1,17 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link href="styles.css" rel="stylesheet">
-    <title>test</title>
-</head>
-<body>
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <title>Test</title>
+      <script src="script.js"></script>
+   </head>
+   <body>
+      <p id="ex" hidden>Hello world</p>
+      <p><a href="https://www.google.com">link</a></p>
+      <span id="example"></span>
+      <script>
+         let a = document.querySelector("a");
+         a.href = "https://lclark.edu";
+         let p = document.querySelectorAll("#ex");
+         document.getElementById("example").innerHTML = "The paragraph is : " + p[0].innerHTML;
+      </script>
+   </body>
+   
 
-    <h2>Center Align Elements</h2>
-    <p>To horizontally center a block element (like div), use margin: auto;</p>
-    
-    <div class="center">
-      <p>Hello World!</p>
-    </div>
-    
-    </body>
 </html>
